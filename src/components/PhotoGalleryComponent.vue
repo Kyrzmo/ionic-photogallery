@@ -17,7 +17,7 @@
                         size-md="4"
                      >
                         <ion-card> 
-                            <ion-img :src="photos" class="gallery-image" />
+                            <ion-img :src="photo" class="gallery-image" />
                         </ion-card>
                     </ion-col>
                 </ion-row>
@@ -36,6 +36,9 @@ import {
     IonCardTitle,
     IonIcon,
     IonText,
+    IonRow,
+    IonCol,
+    IonImg,
 } from "@ionic/vue";
 
 defineProps< { photos: string[] }>();
